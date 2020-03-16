@@ -2,32 +2,42 @@
   .content {
     width: 100%;
     height: 100%;
-    // background-color: gray;
     text-align: center;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 
+    @media(min-width: $tablet) {
+      justify-content: space-evenly;
+    }
+
     &__header {
-      font-size: 2rem;
-      line-height: 1.8;
+      font-size: 1.4rem;
+      line-height: 1.6;
 
       @media(min-width: $tablet) {
         font-size: 3rem;
         letter-spacing: 1px;
+        line-height: 1.8;
       }
     }
 
     &__paragraph {
-      font-size: 1.2rem;
-      line-height: 1.8;
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 2rem;
 
       @media(min-width: $tablet) {
         font-size: 1.6rem;
         letter-spacing: 1px;
+        line-height: 1.6;
       }
+    }
+
+    @media(orientation: portrait) {
+      display: none;
     }
   }
 }
