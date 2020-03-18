@@ -151,4 +151,61 @@
 
 }
 
-#about-c {}
+#about-c {
+  color: lighten($color: $black, $amount: 30%);
+
+
+  .references {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media(orientation: landscape) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item {
+      padding-bottom: 1rem;
+      border-bottom: 1px dotted lighten($color: $black, $amount: 70%);
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      @media(orientation: landscape) {
+        border-bottom: none;
+      }
+
+      .paragraph {
+        border: 1px solid $light-gray;
+        padding: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+      }
+
+      .person {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+
+        &__img {
+          width: 100%;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: top;
+        }
+
+        &__name {
+          font-size: 1rem;
+
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
