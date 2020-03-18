@@ -75,7 +75,6 @@
 #about-b {
   background-color: lighten($color: $black, $amount: 10%);
   padding-top: 2rem;
-  padding-bottom: 2rem;
   text-align: center;
 
   .section-header {
@@ -105,6 +104,10 @@
         height: 100%;
         border-radius: 0;
       }
+    }
+
+    &:last-child {
+      padding-bottom: 3rem;
     }
   }
 
@@ -147,3 +150,5 @@
   }
 
 }
+
+#about-c {}
