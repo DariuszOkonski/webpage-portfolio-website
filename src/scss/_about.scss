@@ -1,0 +1,149 @@
+#about-a {
+  color: $black;
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: $black;
+    text-align: center;
+    gap: 1rem;
+
+    @media(orientation: landscape) {
+      grid-template-columns: 2fr 3fr;
+    }
+
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+
+    .info {
+      background-color: lighten($color: $light-gray, $amount: 20%);
+      padding: 1rem;
+      border-left: 3px solid $yellow;
+
+      &__header {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      &__paragraph {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: lighten($color: $black, $amount: 20%);
+      }
+    }
+  }
+
+  .awards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @media(orientation: landscape) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .award {
+      text-align: center;
+
+      i {
+        color: $yellow;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      &__header {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      &__paragraph {
+        color: lighten($color: $black, $amount: 20%);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+#about-b {
+  background-color: lighten($color: $black, $amount: 10%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  .section-header {
+    color: $white;
+  }
+
+  .skill {
+    text-align: left;
+
+    &__paragraph {
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    &__counter {
+      background-color: $dark-gray;
+      width: 100%;
+      height: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+
+      div {
+        background-color: $yellow;
+        height: 100%;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .logos {
+    background-color: $light-gray;
+
+    .logos-container {
+      display: none;
+
+      @media(orientation: landscape) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .logo {
+        padding: 4rem;
+
+        img {
+          width: 80%;
+        }
+
+        &:last-child {
+          animation-name: rotateReact;
+          animation-duration: 10s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+
+        @keyframes rotateReact {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+
+}
