@@ -51,7 +51,7 @@ body {
     @extend %head;
 
     @media(orientation: landscape) {
-      height: 80px;
+      height: 90px;
     }
   }
 }
@@ -219,3 +219,4 @@ a {
 }
 
 @import "_home";
+@import "_about";
