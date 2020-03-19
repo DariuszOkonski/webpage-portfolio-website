@@ -53,3 +53,54 @@
     }
   }
 }
+
+#contact-b {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: lighten($color: $black, $amount: 10%);
+
+  @media(orientation: landscape) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .connect-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    @media(orientation: landscape) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dotted darken($color: $white, $amount: 60%);
+
+      &:last-child {
+        border: none;
+      }
+
+      @media(orientation: landscape) {
+        border: none;
+      }
+
+      &__icon {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &__header {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
+
+      &__paragraph {
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
