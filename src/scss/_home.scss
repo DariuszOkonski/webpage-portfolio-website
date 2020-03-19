@@ -61,7 +61,17 @@
 
     .item {
       padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dotted lighten($color: $black, $amount: 70%);
+
+      &:last-child {
+        border: none;
+      }
+
+      @media(orientation: landscape) {
+        border: none;
+      }
+
 
       &__icon {
         font-size: 2.5rem;
@@ -164,9 +174,13 @@
     }
 
     .single-process {
-      border-bottom: 1px dashed $black;
+      border-bottom: 1px dotted lighten($color: $black, $amount: 70%);
       padding-bottom: 1rem;
       margin-bottom: 1rem;
+
+      &:last-child {
+        border: none;
+      }
 
 
       @media(orientation: landscape) {

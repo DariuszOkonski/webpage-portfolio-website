@@ -50,6 +50,16 @@
 
     .award {
       text-align: center;
+      padding-bottom: 1rem;
+      border-bottom: 1px dotted lighten($color: $black, $amount: 70%);
+
+      &:last-child {
+        border: none;
+      }
+
+      @media(orientation: landscape) {
+        border: none;
+      }
 
       i {
         color: $yellow;
