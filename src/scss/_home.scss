@@ -46,8 +46,6 @@
   color: $black;
   background-color: $white;
 
-  // min-height: 100vh;
-
   .specials {
     display: grid;
     grid-template-columns: 1fr;
@@ -71,7 +69,6 @@
       @media(orientation: landscape) {
         border: none;
       }
-
 
       &__icon {
         font-size: 2.5rem;
@@ -182,7 +179,6 @@
         border: none;
       }
 
-
       @media(orientation: landscape) {
         border-bottom: none;
         padding-bottom: 0;
@@ -241,7 +237,6 @@
         color: lighten($color: $black, $amount: 30%);
       }
     }
-
 
   }
 }
