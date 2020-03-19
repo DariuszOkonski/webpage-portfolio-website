@@ -20,6 +20,7 @@
 
     .info {
       background-color: lighten($color: $light-gray, $amount: 20%);
+
       padding: 1rem;
       border-left: 3px solid $yellow;
 
@@ -122,7 +123,7 @@
   }
 
   .logos {
-    background-color: $light-gray;
+    background-color: lighten($color: $light-gray, $amount: 20%);
 
     .logos-container {
       display: none;
