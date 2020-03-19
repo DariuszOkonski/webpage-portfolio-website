@@ -1,4 +1,4 @@
-![Portfolio Website Page](src/asset/img/github.png)
+![Portfolio Website Page](src/assets/img/github.png)
 # Portfolio Website
 
 This page is created for desktop and mobile views. It is a simple page with a modern styling technics like CSS flexbox and CSS grid. 
